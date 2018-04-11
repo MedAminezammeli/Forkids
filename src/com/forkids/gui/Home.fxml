@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane" prefHeight="718.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.forkids.gui.HomeController">
+   <children>
+      <ImageView fx:id="BACK" fitHeight="718.0" fitWidth="961.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../src/images%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="430.0" layoutY="30.0" prefHeight="45.0" prefWidth="276.0" text="All For Kids ! Everything is yours" textFill="#1eba64">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXHamburger fx:id="Hamburger" layoutX="914.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" prefHeight="573.0" prefWidth="140.0" />
+   </children>
+</AnchorPane>

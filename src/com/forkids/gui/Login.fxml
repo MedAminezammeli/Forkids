@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="354.0" prefWidth="429.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.forkids.gui.LoginController">
+   <children>
+      <JFXTextField fx:id="emailtxt" focusColor="#f59d63" labelFloat="true" layoutX="32.0" layoutY="145.0" onKeyPressed="#recheck" prefHeight="25.0" prefWidth="265.0" promptText="Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordtxt" focusColor="#f59d63" labelFloat="true" layoutX="32.0" layoutY="196.0" onKeyPressed="#recheck" prefHeight="25.0" prefWidth="265.0" promptText="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton id="loginbtn" fx:id="loginbnt" layoutX="40.0" layoutY="295.0" onAction="#login" prefHeight="25.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #023956;" text="Login" textFill="WHITE" />
+      <JFXButton fx:id="registerbtn" layoutX="165.0" layoutY="295.0" onMouseClicked="#showRegister" prefHeight="25.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #023956;" text="Sign-up" textFill="WHITE" />
+      <Label layoutX="159.0" layoutY="76.0" text="Your application is up !" textFill="#ff942f">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="state" fill="#030303" layoutX="159.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <JFXSpinner fx:id="sp" layoutX="330.0" layoutY="180.0" />
+      <JFXButton layoutX="36.0" layoutY="237.0" onMouseClicked="#forgot" prefHeight="25.0" prefWidth="119.0" text="Forgot password ?" />
+   </children>
+</AnchorPane>

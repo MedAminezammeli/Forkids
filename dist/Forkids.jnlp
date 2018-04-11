@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Forkids.jnlp">
+  <information>
+    <title>Forkids</title>
+    <vendor>amine</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Forkids.jar" size="4476275" download="eager" />
+    <jar href="lib\TrayTester.jar" size="52070" download="eager" />
+    <jar href="lib\com.sun.syndication.jar" size="219671" download="eager" />
+    <jar href="lib\csvjdbc-1.0-31.jar" size="171983" download="eager" />
+    <jar href="lib\javax.xml.stream-1.0.1.jar" size="39698" download="eager" />
+    <jar href="lib\jdom-1.1.3.jar" size="151304" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2454308" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\poi-3.9.jar" size="1869113" download="eager" />
+    <jar href="lib\rome-1.0.jar" size="219671" download="eager" />
+    <jar href="lib\twilio-java-sdk-7.0.0-rc-10-jar-with-dependencies.jar" size="8715325" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Forkids" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="forkids.Forkids"  name="Forkids" />
+  <update check="always"/>
+</jnlp>

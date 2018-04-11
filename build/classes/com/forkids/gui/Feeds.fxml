@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.forkids.gui.FeedsController">
+   <children>
+      <JFXListView fx:id="FeedsLis" layoutX="50.0" layoutY="40.0" prefHeight="404.0" prefWidth="573.0" />
+      <Label layoutX="275.0" layoutY="14.0" prefHeight="31.0" prefWidth="108.0" text="Jeux Vidéos récents " AnchorPane.bottomAnchor="437.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="714.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.forkids.gui.UserInterfaceController">
+    <children>
+        <ImageView fx:id="BACK" fitHeight="770.0" fitWidth="926.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../src/1425834768gris-dynamique.jpg" />
+         </image></ImageView>
+        <Separator layoutX="721.0" layoutY="147.0" orientation="VERTICAL" prefHeight="511.0" prefWidth="3.0" />
+        <JFXListView fx:id="listview" layoutX="63.0" layoutY="132.0" onMouseClicked="#remplirInputs" prefHeight="464.0" prefWidth="623.0" />
+        <ImageView fx:id="ImageModif" fitHeight="364.0" fitWidth="194.0" layoutX="724.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../src/ryan_by_thn001-davrrq0.gif" />
+         </image></ImageView>
+        <Label layoutX="37.0" layoutY="83.0" text="Rechercher produit :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font>
+      </Label>
+        <JFXTextField fx:id="RechercherField" layoutX="206.0" layoutY="79.0" onKeyPressed="#RechercherProduit" prefHeight="29.0" prefWidth="270.0" />
+         <JFXHamburger fx:id="Hamburger" layoutX="875.0" layoutY="14.0" />
+        <JFXDrawer fx:id="drawer" prefHeight="770.0" prefWidth="187.0" />
+      <CheckBox fx:id="check1" layoutX="489.0" layoutY="100.0" mnemonicParsing="false" text="Nom" />
+      <CheckBox fx:id="check2" layoutX="551.0" layoutY="100.0" mnemonicParsing="false" text="Type" />
+      <JFXToggleButton fx:id="AfficherProduitsPromotionTPB" layoutX="277.0" layoutY="639.0" onAction="#AfficherProduitsPromotion" prefHeight="56.0" prefWidth="211.0" text="Produits avec promotion" textFill="#252222" unToggleColor="#c90a0a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXToggleButton>
+      <ImageView fx:id="rssButton" fitHeight="56.0" fitWidth="60.0" layoutX="778.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../../../src/rss.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

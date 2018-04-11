@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="770.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.forkids.gui.MesProduitsController">
+   <children>
+      <ImageView fx:id="BACK" fitHeight="770.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../src/1425834768gris-dynamique.jpg" />
+         </image></ImageView>
+      <Separator layoutX="721.0" layoutY="147.0" orientation="VERTICAL" prefHeight="511.0" prefWidth="3.0" />
+      <JFXListView fx:id="listview" layoutX="63.0" layoutY="132.0" onMouseClicked="#remplirInputs" prefHeight="464.0" prefWidth="623.0" />
+      <JFXButton fx:id="ModifierProduit" layoutX="958.0" layoutY="682.0" onAction="#ModifierProduit" prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #ef7351;" text="Modifier" />
+      <JFXButton fx:id="SupprimerProduit" layoutX="815.0" layoutY="682.0" onAction="#SupprimerProduit" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #ef7351;" text="Supprimer" />
+      <TextField fx:id="NomProduit" layoutX="910.0" layoutY="142.0" promptText="Nom produit" />
+      <TextField fx:id="PrixProduit" layoutX="910.0" layoutY="184.0" promptText="Prix produit" />
+      <TextField fx:id="Description" layoutX="910.0" layoutY="228.0" promptText="Description" />
+      <TextField fx:id="PrixPromotion" layoutX="910.0" layoutY="275.0" promptText="Prix promotion" />
+      <ImageView fx:id="ImageModif" fitHeight="208.0" fitWidth="336.0" layoutX="775.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="upload" layoutX="1017.0" layoutY="596.0" onAction="#uploadModif" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #ef7351;" text="Upload" />
+      <Label fx:id="nomProduitLabel" layoutX="762.0" layoutY="147.0" text="Nom produit :" textFill="#0d0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="prixProduitLabel" layoutX="764.0" layoutY="189.0" text="Prix produit :" textFill="#0d0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="descProduitLabel" layoutX="766.0" layoutY="233.0" text="Description :" textFill="#0d0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="prixPromoProduitLabel" layoutX="754.0" layoutY="280.0" text="Prix promotion :" textFill="#0d0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="46.0" layoutY="83.0" text="Rechercher produit :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXTextField fx:id="RechercherField" layoutX="206.0" layoutY="79.0" onKeyPressed="#RechercherProduit" prefHeight="29.0" prefWidth="270.0" />
+      <JFXToggleButton fx:id="AfficherProduitsPromotionTPB" layoutX="230.0" layoutY="629.0" onAction="#AfficherProduitsPromotion" prefHeight="58.0" prefWidth="226.0" text="Produits avec promotion" textFill="#2b0790" unToggleColor="#c30d0d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXToggleButton>
+      <JFXToggleButton fx:id="ExportExcelPB" layoutX="506.0" layoutY="629.0" onAction="#ExportExcel" text="Export excel" textFill="#2b0790" unToggleColor="#d31e1e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXToggleButton>
+      <JFXHamburger fx:id="Hamburger" layoutX="1156.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" prefHeight="770.0" prefWidth="187.0" />
+      <CheckBox fx:id="check1" layoutX="494.0" layoutY="100.0" mnemonicParsing="false" text="Nom" />
+      <CheckBox fx:id="check2" layoutX="556.0" layoutY="100.0" mnemonicParsing="false" text="Type" />
+      <ImageView fx:id="rssButton" fitHeight="39.0" fitWidth="38.0" layoutX="1099.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../src/rss.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="48.0" layoutX="1041.0" onMouseClicked="#statproduit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../src/LogoStats.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
